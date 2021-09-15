@@ -1,5 +1,14 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom";
-import Button from "./button";
+import React from "react";
+import ReactDOM from "react-dom";
+import Icon from './icon';
 
-ReactDOM.render(<Button />, document.body);
+
+ReactDOM.render(<div>
+  <Icon name="wechat"/>
+  <Icon name="qq"/>
+  <Icon name="alipay"/>
+  <Icon name="weibo"/>
+  <Icon name="taobao"/>
+  <Icon name="firefox"/>
+  <Icon name="google"/>
+</div>, document.querySelector('#root'));
