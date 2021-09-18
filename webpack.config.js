@@ -8,8 +8,8 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "dist/lib"),
-    library: "FUI",
-    libraryTarget: "umd",
+    library: 'Easy-UI',
+    libraryTarget: 'umd',
   },
   module: {
     rules: [
@@ -21,6 +21,10 @@ module.exports = {
         test: /\.svg$/,
         loader: 'svg-sprite-loader',
       },
+      {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      }
     ],
   },
 };
