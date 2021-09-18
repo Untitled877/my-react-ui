@@ -1,6 +1,6 @@
 {
-  "name": "fui888",
-  "version": "1.1.1",
+  "name": "easy-react-ui",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/lib/index",
   "types": "dist/lib/index",
@@ -15,15 +15,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FrankFang/frank-test-2.git"
+    "url": "git+https://github.com/Untitled877/my-react-ui.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FrankFang/frank-test-2/issues"
+    "url": "https://github.com/Untitled877/my-react-ui/issues"
   },
-  "homepage": "https://github.com/FrankFang/frank-test-2#readme",
+  "homepage": "https://github.com/Untitled877/my-react-ui#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",

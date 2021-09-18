@@ -1,0 +1,92 @@
+@import "../helper";
+.easy-button {
+  box-sizing: border-box;
+  height: $h;
+  padding: 0 12px;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  background: white;
+  color: $color;
+  border: 1px solid $green;
+  border-radius: $radius;
+  box-shadow: 0 1px 0 fade-out(black, 0.95);
+  transition: background 250ms;
+  margin: 10px 0;
+  & + & {
+    margin-left: 8px;
+  }
+  &:hover,&:focus {
+    color: lighten($green, 10%);
+  }
+  &:focus {
+    outline: none;
+  }
+  &::-moz-focus-inner {
+    border: 0;
+  }
+  &.easy-theme-main {
+    background: $green;
+    box-shadow: none;
+    color: white;
+    &:hover, &:focus {
+      background: lighten($green, 10%);
+    }
+  }
+  &.easy-theme-link {
+    border-color: transparent;
+    box-shadow: none;
+    color: $green;
+    &:hover, &:focus {
+      color: lighten($green, 10%);
+      text-decoration: underline;
+    }
+  }
+  &.easy-theme-text {
+    border-color: transparent;
+    box-shadow: none;
+    color: inherit;
+    background: $pink;
+    &:hover, &:focus {
+      background: darken($pink, 5%);
+    }
+  }
+  &.easy-theme-danger {
+    background: $red;
+    color: white;
+    border-color: $red;
+    &:hover, &:focus {
+      background: darken($red, 10%);
+      border-color: darken($red, 10%);
+    }
+  }
+  &.easy-size-big {
+    font-size: 24px;
+    height: 48px;
+    padding: 0 16px;
+  }
+  &.easy-size-small {
+    font-size: 12px;
+    height: 20px;
+    padding: 0 4px;
+  }
+
+  &.easy-theme-button {
+    &[disabled] {
+      cursor: not-allowed;
+      color: $grey;
+      &:hover {
+        border-color: $grey;
+      }
+    }
+  }
+  &.easy-theme-link, &.easy-theme-text {
+    &[disabled] {
+      cursor: not-allowed;
+      color: $grey;
+    }
+  }
+}
+
