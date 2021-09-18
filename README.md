@@ -1,1 +1,1 @@
-# my-react-ui
+# Easy-React-UI
