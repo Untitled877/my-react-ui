@@ -7,6 +7,7 @@ import Button from '../button/button';
 
 interface Props {
   visible: boolean;
+  title?:string;
   buttons?: Array<ReactElement>;
   onClose: React.MouseEventHandler;
   closeOnClickMask?: boolean;
@@ -31,6 +32,7 @@ const Dialog: React.FunctionComponent<Props> = (props) => {
         <div className={sc('close')} onClick={onClickClose}>
           <Icon name="close"></Icon>
         </div>
+        {props.title && <header className={sc('header')}>{props.title}</header>}
         <main className={sc('main')}>
           {props.children}
         </main>

@@ -18,6 +18,11 @@
     background: fade-out(black, 0.5);
     z-index: 1;
   }
+  &-header {
+    font-size: 22px;
+    padding: 8px 16px;
+    border-bottom: 1px solid grey;
+  }
   &-main {
     padding: 8px 16px;
     min-height: 6em;
