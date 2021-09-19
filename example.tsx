@@ -5,6 +5,7 @@ import IconDemo from './lib/icon/icon.demo';
 import ButtonDemo from './lib/button/button.demo'
 import DialogDemo from './lib/dialog/dialog.demo';
 import LayoutDemo from './lib/layout/layout.demo';
+import SwitchDemo from './lib/switch/switch.demo';
 import './example.scss';
 import { Icon } from './lib';
 
@@ -34,6 +35,9 @@ ReactDOM.render(
             <li>
               <NavLink to="/layout">Layout</NavLink>
             </li>
+            <li>
+              <NavLink to="/switch">Switch</NavLink>
+            </li>
           </ul>
         </div>
         <div className="site-main">
@@ -41,6 +45,7 @@ ReactDOM.render(
           <Route path="/button" component={ButtonDemo}/>
           <Route path="/dialog" component={DialogDemo}/>
           <Route path="/layout" component={LayoutDemo}/>
+          <Route path="/switch" component={SwitchDemo}/>
         </div>
       </div>
       <div className="site-footer">
