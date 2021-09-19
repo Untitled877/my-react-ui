@@ -6,6 +6,7 @@ import ButtonDemo from './lib/button/button.demo'
 import DialogDemo from './lib/dialog/dialog.demo';
 import LayoutDemo from './lib/layout/layout.demo';
 import SwitchDemo from './lib/switch/switch.demo';
+import TabsDemo from './lib/tabs/tabs.demo';
 import './example.scss';
 import { Icon } from './lib';
 
@@ -38,6 +39,9 @@ ReactDOM.render(
             <li>
               <NavLink to="/switch">Switch</NavLink>
             </li>
+            <li>
+              <NavLink to="/tabs">Tabs</NavLink>
+            </li>
           </ul>
         </div>
         <div className="site-main">
@@ -46,6 +50,7 @@ ReactDOM.render(
           <Route path="/dialog" component={DialogDemo}/>
           <Route path="/layout" component={LayoutDemo}/>
           <Route path="/switch" component={SwitchDemo}/>
+          <Route path="/tabs" component={TabsDemo}/>
         </div>
       </div>
       <div className="site-footer">
