@@ -5,7 +5,7 @@ import DialogExample2 from './dialog.example.2';
 import DialogExample3 from './dialog.example.3';
 import DialogExample4 from './dialog.example.4';
 
-const IconDemo = () => {
+const DialogDemo = () => {
   return (
     <Fragment>
       <h2 className="title">常规用法</h2>
@@ -31,4 +31,4 @@ const IconDemo = () => {
   );
 }
 
-export default IconDemo;
+export default DialogDemo;

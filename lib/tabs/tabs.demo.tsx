@@ -3,7 +3,7 @@ import TabsExample from './tabs.example';
 import Demo from '../../demo';
 
 
-const IconDemo = () => {
+const TabsDemo = () => {
   return (
     <Fragment>
       <h2 className="title">常规用法</h2>
@@ -14,4 +14,4 @@ const IconDemo = () => {
   );
 }
 
-export default IconDemo;
+export default TabsDemo;

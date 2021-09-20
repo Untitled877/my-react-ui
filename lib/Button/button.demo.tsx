@@ -4,7 +4,7 @@ import ButtonExample1 from './button.example.1';
 import ButtonExample2 from './button.example.2';
 import ButtonExample3 from './button.example.3';
 
-const IconDemo = () => {
+const ButtonDemo = () => {
   return (
     <Fragment>
       <h2 className="title">支持不同主题</h2>
@@ -25,4 +25,4 @@ const IconDemo = () => {
   );
 }
 
-export default IconDemo;
+export default ButtonDemo;

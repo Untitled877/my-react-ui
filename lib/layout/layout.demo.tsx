@@ -5,7 +5,7 @@ import LayoutExample2 from './layout.example.2';
 import LayoutExample3 from './layout.example.3';
 import LayoutExample4 from './layout.example.4';
 
-const IconDemo = () => {
+const LayoutDemo = () => {
   return (
     <Fragment>
       <h2 className="title">布局一</h2>
@@ -31,4 +31,4 @@ const IconDemo = () => {
   );
 }
 
-export default IconDemo;
+export default LayoutDemo;

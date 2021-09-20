@@ -3,7 +3,7 @@ import Demo from '../../demo';
 import SwitchExample1 from './switch.example.1';
 import SwitchExample2 from './switch.example.2';
 
-const IconDemo = () => {
+const SwitchDemo = () => {
   return (
     <Fragment>
       <h2 className="title">常规用法</h2>
@@ -19,4 +19,4 @@ const IconDemo = () => {
   );
 }
 
-export default IconDemo;
+export default SwitchDemo;

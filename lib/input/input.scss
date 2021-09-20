@@ -1,0 +1,35 @@
+@import "../helper";
+.easy-input {
+  border: 1px solid #ddd;
+  line-height: 22px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  box-shadow: 0 0 0 2px fade_out($green, 1);
+  transition: box-shadow 250ms;
+  &:focus {
+    outline: none;
+    border-color: $green;
+    box-shadow: 0 0 0 2px fade_out($green, 0.5);
+  }
+  &:hover{
+    border-color: $green;
+  }
+  &[disabled],
+  &[readonly] {
+    cursor: not-allowed;
+  }
+  &[disabled] {
+    border-color: #ddd;
+  }
+}
+.easy-input-error {
+  border-color: #cf222e;
+  &:hover {
+    border-color: #cf222e;
+    box-shadow: 0 0 0 2px fade_out(#cf222e, 0.5);
+  }
+}
+.easy-input-errorMsg {
+  color: #cf222e;
+  margin-left: 5px;
+}
