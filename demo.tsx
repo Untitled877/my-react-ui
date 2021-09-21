@@ -1,8 +1,8 @@
 import * as React from 'react';
-import Highlight, {defaultProps} from "prism-react-renderer";
+import Highlight, {defaultProps} from 'prism-react-renderer';
 import dracula from 'prism-react-renderer/themes/dracula';
 import {useState} from 'react';
-import Button from './lib/button/button'
+import Button from './lib/button/button';
 
 interface Props {
   code: string;
@@ -14,7 +14,7 @@ const Demo: React.FunctionComponent<Props> = (props) => {
     <Highlight {...defaultProps} code={props.code} language="jsx" theme={dracula}>
       {({className, style, tokens, getLineProps, getTokenProps}) => (
         <pre className={className}
-             style={style}
+             style={{backgroundColor: "#282A36",overflowX: "auto"}}
         >
               {tokens.map((line, i) => (
                 <div {...getLineProps({line, key: i})}>

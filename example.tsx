@@ -58,9 +58,6 @@ ReactDOM.render(
           <Route path="/layout" component={LayoutDemo}/>
         </div>
       </div>
-      <div className="site-footer">
-        &copy;easy-ui
-      </div>
     </div>
   </Router>
   , document.querySelector('#root'));
