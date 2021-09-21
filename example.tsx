@@ -1,15 +1,16 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import {HashRouter as Router, Route, NavLink} from 'react-router-dom';
+import {HashRouter as Router, Route, NavLink, Redirect, Switch} from 'react-router-dom';
+import Intro from './lib/Intro';
 import IconDemo from './lib/icon/icon.demo';
-import ButtonDemo from './lib/button/button.demo'
+import ButtonDemo from './lib/button/button.demo';
 import DialogDemo from './lib/dialog/dialog.demo';
 import LayoutDemo from './lib/layout/layout.demo';
 import SwitchDemo from './lib/switch/switch.demo';
 import TabsDemo from './lib/tabs/tabs.demo';
 import InputDemo from './lib/input/input.demo';
 import './example.scss';
-import { Icon } from './lib';
+import {Icon} from './lib';
 
 
 ReactDOM.render(
@@ -23,6 +24,11 @@ ReactDOM.render(
       </div>
       <div className="site-content">
         <div className="site-aside">
+          <ul>
+            <li>
+              <NavLink to="/doc">介绍</NavLink>
+            </li>
+          </ul>
           <h2>组件</h2>
           <ul>
             <li>
@@ -49,13 +55,17 @@ ReactDOM.render(
           </ul>
         </div>
         <div className="site-main">
-          <Route path="/icon" component={IconDemo}/>
-          <Route path="/button" component={ButtonDemo}/>
-          <Route path="/switch" component={SwitchDemo}/>
-          <Route path="/input" component={InputDemo}/>
-          <Route path="/tabs" component={TabsDemo}/>
-          <Route path="/dialog" component={DialogDemo}/>
-          <Route path="/layout" component={LayoutDemo}/>
+          <Switch>
+            <Route exact path="/doc" component={Intro}/>
+            <Route exact path="/icon" component={IconDemo}/>
+            <Route exact path="/button" component={ButtonDemo}/>
+            <Route exact path="/switch" component={SwitchDemo}/>
+            <Route exact path="/input" component={InputDemo}/>
+            <Route exact path="/tabs" component={TabsDemo}/>
+            <Route exact path="/dialog" component={DialogDemo}/>
+            <Route exact path="/layout" component={LayoutDemo}/>
+            <Redirect exact from="/" to="/doc"/>
+          </Switch>
         </div>
       </div>
     </div>
